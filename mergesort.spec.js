@@ -16,6 +16,19 @@ describe('Split Array function', function() {
 
 describe('Merge function', function(){
     it('is able to merge two sorted arrays into one sorted array', function(){
-      // test the merging algorithm
+      let sortedOne = [1,5,6,7]
+      let sortedTwo = [6,9,10, 11, 12] 
+
+      expect(merge(sortedOne, sortedTwo)).toEqual([1,5,6,6,7,9,10,11,12]) 
+
+    });
+  });
+
+  describe('Merge Sort function', function(){
+    it('is able to sort an array', function() {
+      let sorted= [5, 6, 7, 10, 11, 5, 16, 17, 18] 
+
+      expect(merge(sorted)).toEqual([5, 5, 6, 7, 10, 11, 16, 17, 18]) 
+
     });
   });
