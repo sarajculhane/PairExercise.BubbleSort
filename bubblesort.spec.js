@@ -20,6 +20,19 @@ describe('Bubble Sort', function(){
         expect([3,5,6,2,4]).toNotEqual(bubbleSort([3,5,6,2,4]));
     });
 
+    it ('expect comparison counter to increment with each call', function(){
+        const array = [8, 7, 6, 5, 4, 3, 2, 1]
+        const comparisonCounter = 0
+        bubbleSort(array);
+        expect(counter).toEqual(8)
+    })
+    it ('expect swap counter to increment when a value is swapped', function(){
+        const array = [6, 8, 5, 7]
+        const swapCounter = 0
+        bubbleSort(array);
+        expect(swapCounter).toEqual(3)
+    })
+
   });
 
 // describe('Bubble Sort', function(){
